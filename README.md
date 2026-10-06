@@ -1,6 +1,6 @@
 # JX Bank Converter
 
-Converts JX-8P banks of presets to banks that can be used in JX-10 and MKS-70, using GS-CUSTOM_A.syx as a validation reference.
+Converts JX-8P banks of presets to banks that can be used in JX-10 and MKS-70, using bank GS-CUSTOM-A.syx as a validation reference.
 
 ## 📱 Features
 - Feature 1 - Simple drag and drop interface.
