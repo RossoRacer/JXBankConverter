@@ -8,6 +8,8 @@ Converts JX-8P banks of presets to banks that can be used in JX-10 and MKS-70, u
 ## 📱 Features
 - Feature 1 - Simple interface.
 
+- EXPERIMENTAL - Use at your own risk!
+
 ## 🛠 Tech Stack
 - **Language:** Swift / SwiftUI / UIKit
 - **Architecture:** MVVM / MVC
