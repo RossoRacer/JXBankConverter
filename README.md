@@ -25,3 +25,6 @@ Converts JX-8P banks of presets to banks that can be used in JX-10 and MKS-70, u
 1. Clone the repository:
    ```bash
    git clone [https://github.com/RossoRacer/JXBankConverter.git](https://github.com/RossoRacer/JXBankConverter.git)
+
+
+Co-authored-by: Claude <noreply@anthropic.com>
