@@ -8,7 +8,7 @@ struct ContentView: View {
     @State private var converted = Data()
     @State private var validation: ValidationReport?
     @State private var sourceName = "No JX-8P bank loaded"
-    @State private var referenceName = "GSCUSTOM-A.SYX (Default Reference)"
+    @State private var referenceName = "GNM.syx (Default Reference)"
     @State private var status = "Load a JX-8P bank to begin."
     @State private var errorMessage: String?
     @State private var strategy: PatchStrategy = .mirror
@@ -164,17 +164,17 @@ struct ContentView: View {
     }
 
     private func loadDefaultReference() {
-        if let bundleURL = Bundle.main.url(forResource: "GSCUSTOM-A", withExtension: "syx") ??
-                          Bundle.main.url(forResource: "GSCUSTOM-A", withExtension: "SYX") {
+        if let bundleURL = Bundle.main.url(forResource: "GNM", withExtension: "syx") ??
+                          Bundle.main.url(forResource: "GNM", withExtension: "SYX") {
             do {
                 let data = try Data(contentsOf: bundleURL)
                 reference = try JX10ReferenceBank.parse(data)
-                referenceName = "GSCUSTOM-A.SYX (Default)"
+                referenceName = "GNM.syx (Default)"
             } catch {
                 errorMessage = "Failed to parse default reference: \(error.localizedDescription)"
             }
         } else {
-            errorMessage = "Default reference bank GSCUSTOM-A.syx missing from app bundle."
+            errorMessage = "Default reference bank GNM.syx missing from app bundle."
         }
     }
 
